@@ -1,8 +1,10 @@
 from bs4 import BeautifulSoup
 import requests
 import time
-import Tkinter
-import tkMessageBox
+import tkinter
+from tkinter import messagebox
+
+
 
 today=time.strftime("%Y-%m-%d");
 
@@ -30,6 +32,5 @@ for link in soup.find_all('div'):
     if(count>1):
         break;
 
-tkMessageBox.showinfo("Score", line)
+tkinter.messagebox.showinfo("Score", line)
 
-window.mainloop()
